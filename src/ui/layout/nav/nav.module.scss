@@ -1,0 +1,31 @@
+@use '../../styles/settings/' as *;
+
+.nav {
+    $this: &;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    @media (max-width: $breakpoint-nav) {
+        display: none;
+
+        &--open {
+            display: block;
+        }
+    }
+
+    &--open {
+        background: var(--brand);
+        left: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+
+        #{$this}__list {
+            flex-direction: column;
+        }
+    }
+}

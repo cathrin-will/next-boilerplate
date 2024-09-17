@@ -1,0 +1,13 @@
+@use '../../styles/settings/' as *;
+
+.header {
+    background: var(--header-background);
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+
+    @media (max-width: $breakpoint-nav) {
+        justify-content: end;
+    }
+}

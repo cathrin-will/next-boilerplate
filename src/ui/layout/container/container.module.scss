@@ -1,0 +1,12 @@
+@use '../../styles/settings/' as *;
+
+.container {
+    margin-inline: auto;
+    max-width: var(--site-width);
+    padding-inline: 24px;
+    width: 100%;
+}
+
+.trim {
+    max-width: 1024px;
+}

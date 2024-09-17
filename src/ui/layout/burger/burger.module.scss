@@ -1,0 +1,7 @@
+@use '../../styles/settings/' as *;
+
+.burger {
+    @media (min-width: $breakpoint-nav) {
+        display: none;
+    }
+}
